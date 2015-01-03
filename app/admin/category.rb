@@ -4,7 +4,7 @@ ActiveAdmin.register Category do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :name, :description
+  permit_params :name, :description, :photo_url
   #
   # or
   #
@@ -17,7 +17,7 @@ ActiveAdmin.register Category do
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :name
-      #f.input :category_photo, :as => :file, :hint => f.template.image_tag(f.object.category_photo.url)
+      f.input :photo_url, :as => :file, :hint => f.template.image_tag(f.object.photo_url.url)
       f.input :description
     end
     f.actions

@@ -24,7 +24,7 @@ ActiveAdmin.register Deal do
       f.input :deal_valid
       f.input :discount_price
       f.input :price
-      #f.input :category_photo, :as => :file, :hint => f.template.image_tag(f.object.category_photo.url)
+      f.input :photo_url, :as => :file, :hint => f.template.image_tag(f.object.photo_url.url)
     end
     f.actions
   end
