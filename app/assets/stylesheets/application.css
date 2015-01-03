@@ -57,6 +57,7 @@ a, a:link, a:visited{
 	margin-right: 1%;
 	border: 1px solid #0084B4;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .deals_container_item_title{width: 92%;margin: 2%;background-color: #0084B4;color: #ffffff;border-radius: 10px;padding: 2%;}
 .deals_container_item_img{width: 96%;margin: 2%;height: 200px;}
