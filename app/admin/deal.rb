@@ -14,6 +14,20 @@ ActiveAdmin.register Deal do
   #   permitted
   # end
 
+  index do
+    column :id
+    column :title
+    column :category
+    column "Image" do |deal|
+      image_tag(deal.photo_url.url,:width => '100', :height => '100')
+    end
+    column :description
+    column :deal_valid
+    column :price
+    column :discount_price
+    actions
+  end
+
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :title

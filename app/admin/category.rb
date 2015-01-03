@@ -14,6 +14,16 @@ ActiveAdmin.register Category do
   #   permitted
   # end
 
+  index do
+    column :id
+    column :name
+    column "Image" do |category|
+      image_tag(category.photo_url.url,:width => '100', :height => '100')
+    end
+    column :description
+    actions
+  end
+
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :name
