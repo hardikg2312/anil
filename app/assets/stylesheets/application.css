@@ -17,6 +17,9 @@ a, a:link, a:visited{
   text-decoration: none;
   color: #0084B4;
 }
+body{
+	background-color: #E5E5E5;
+}
 
 .main_container{
   padding-top: 18px;
@@ -56,14 +59,37 @@ a, a:link, a:visited{
 	margin-left: 1%;
 	margin-right: 1%;
 	border: 1px solid #0084B4;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  background-color: #ffffff;
 }
-.deals_container_item_title{width: 92%;margin: 2%;background-color: #0084B4;color: #ffffff;border-radius: 10px;padding: 2%;}
+.deals_container_item:hover {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+  box-shadow: 0px 0px 7px 1px rgba(37,37,37,1);
+}
+.deals_container_item_title{width: 92%;margin: 2%;background-color: #0084B4;color: #ffffff;border-radius: 4px;padding: 2%;}
 .deals_container_item_img{width: 96%;margin: 2%;height: 200px;}
 .deals_container_item_description{width: 96%;font-size: 1.1em; color: #8B8B8B;margin: 2%;}
 .deals_container_item_price{width: 96%;margin: 2%; font-size: 1.75em; color: #002245;font-weight: bold;}
 .deals_container_item_real_price{margin-left: 5px; font-size: 0.7em;color:#8B8B8B; text-decoration:line-through;font-weight: normal; }
 .deals_container_item_deal_url_div{width: 100%;}
-.deals_container_item_deal_url_div div{width: 40%;height: 30px;padding-top: 10px; border-radius: 10px;background-color:#DB4500;font-weight: bold;font-size: 1.8em }
+.deals_container_item_deal_url_div a {color: #ffffff;}
+.deals_container_item_deal_url_div div{
+	width: 40%;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+  box-shadow: 0px 0px 1px 1px rgba(37,37,37,1);
+	height: 30px;
+	padding-top: 10px;
+	border-radius: 10px;
+	background-color:#DB4500;
+	font-weight: bold;
+	font-size: 1.8em }
+.deals_container_item_deal_url_div div:hover{
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  background-color: #C13D00;
+}
 .deals_container_item_deal_url{width: 200px;height: 30px;}
