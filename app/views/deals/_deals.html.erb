@@ -1,0 +1,19 @@
+<% deals.each do |d| %>
+  <div class="deals_container_item">
+    <div class="deals_container_item_title"><%= truncate(d.title, length: 30) %></div>
+    <%= image_tag(d.photo_url , :class => "deals_container_item_img" )%>
+    <div class="deals_container_item_description">
+      <%= truncate(d.description, length: 80) %>
+    </div>  
+    <div class="deals_container_item_price">
+      @ Rs. <%= d.discount_price %>
+      <% off = (d.price*1.0 - d.discount_price)/d.price*100 %>
+      <span class="deals_container_item_real_price"> Rs. <%= d.price %> <%= "(#{off.round}% off)" %></span>
+    </div>
+    <div align="center" class="deals_container_item_deal_url_div">
+      <div>
+         <a href="<%= d.deal_url %>" target= "_blank" class="deals_container_item_deal_url" >BUY</a>
+      </div>
+    </div>
+  </div>
+<% end %>

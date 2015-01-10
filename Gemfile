@@ -51,3 +51,6 @@ gem 'cloudinary'
 
 #perfomance check
 gem 'rack-mini-profiler'
+
+## Gemfile for Rails 3+, Sinatra, and Merb paginations
+gem 'will_paginate', '~> 3.0.6'

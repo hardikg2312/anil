@@ -1,0 +1,7 @@
+<% if !@deals.blank? %>
+  $('.deals_container').append("<%= escape_javascript(render 'deals', :deals => @deals) %>");
+  $('.view_more_class').empty().append('<%= link_to "View More",deals_path(:page => @page + 1 ), :remote => true  %>');
+<% else %>
+  $('.view_more_class').empty();
+<% end %>
+
