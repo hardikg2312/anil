@@ -26,7 +26,10 @@ body{
   margin: auto;
   width: 90%;
 }
-
+.logo{
+  margin: 5px;
+  float: left;
+}
 .categories_container{
 	width: 96%;
 	margin-left: 2%;
@@ -38,9 +41,10 @@ body{
 }
 
 .categories_container_item{
-	margin-left: 14px;
-	margin-right: 14px;
+	margin: 5px;
 	float: left;
+  border: 1px solid silver;
+  padding: 4px;
 }
 
 .deals_container{
@@ -49,7 +53,10 @@ body{
 	margin-left: 2%;
 	margin-right: 2%;
 }
-
+.follow_link{
+  font-size: 18px;
+  padding: 5px;margin: 5px;
+}
 .deals_container_header{height: 30px; font-size: 1.2em;font-weight: bold;background-color: #0084B4;color: #ffffff;}
 .deals_container_header div{padding-top: 5px; width: 96%;margin: 2%;}
 .deals_container_item{

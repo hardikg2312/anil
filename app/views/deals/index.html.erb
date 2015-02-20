@@ -1,5 +1,8 @@
 <div class="main_container">
   <div class="categories_container">
+    <div class="logo">
+      <%= link_to image_tag('logo.png'), root_path %>
+    </div>
     <span class="categories_container_item"><%= link_to "All", deals_path( :catogory => "all") %></span>
     <% @categories.each do |c| %>
       <span class="categories_container_item"><%= link_to c.name.capitalize, deals_path(:catogory => c.slug) %></span>
